@@ -1,6 +1,6 @@
 # Overview
 
-This [Shiny](https://shiny.posit.co) app retrieves search results from Tradera using the [TradeRa](https://github.com/aurora-mm/TradeRa) package and displays them in a data table format. This app is a part of the coursework for the Advanced Programming in R course  (732A94) at Linköping University.
+This [Shiny](https://shiny.posit.co) app retrieves search results from Tradera with the [TradeRa](https://github.com/aurora-mm/TradeRa) package and displays them as data table. This app is a part of the coursework for the Advanced Programming in R course  (732A94) at Linköping University.
 
 # Dependencies
 
