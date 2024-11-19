@@ -4,7 +4,6 @@
 devtools::install_github("aurora-mm/TradeRa", force = TRUE)
 
 library(shiny)
-library(data.table)
 library(DT)
 library(TradeRa)
 
@@ -40,14 +39,14 @@ server <- function(input, output, session) {
     # Extract the data frame from the search result
     if (!is.null(searchResult)) {
       # Select relevant columns for display
-      results$df <- data.table(
+      results$df <- data.frame(
         ShortDescription = searchResult$ShortDescription,
         LongDescription = searchResult$LongDescription,
         Price = searchResult$Price,
         ItemUrl = searchResult$ItemUrl
       )
     } else {
-      results$df <- data.table(
+      results$df <- data.frame(
         ShortDescription = "Cannot fetch search results!",
         LongDescription = "",
         Price = "",
